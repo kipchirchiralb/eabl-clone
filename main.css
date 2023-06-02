@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-img[src$="svg"] {
-  width: 20px;
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -52,6 +49,10 @@ header > button img {
 /* sections */
 section {
   padding: 0 80px;
+}
+section .section-heading {
+  font-size: 16px;
+  padding: 16px 0;
 }
 .intro {
   height: 470px;
@@ -112,4 +113,163 @@ section {
   100% {
     transform: translateY(0px);
   }
+}
+
+.news .top-news {
+  display: flex;
+  gap: 16px;
+}
+.news .top-news > div {
+  flex: 1;
+  height: 450px;
+}
+
+.news .top-news .news-item {
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 0px 22px 0px rgba(0, 0, 0, 0.55);
+}
+
+.news .top-news #news-item-one {
+  background-image: url(./images/442725725-group-legal-director-nadida-rowlands-min_0.jpg);
+}
+.news .top-news #news-item-two {
+  background-image: url(./images/JIPE-FORM-NA-SENATOR.png);
+  height: 340px;
+  margin-bottom: 20px;
+}
+
+.news .top-news .news-box,
+.news .bottom-news .news-box {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.news .top-news .news-item:hover .news-box,
+.news .bottom-news .news-item:hover .news-box {
+  background-color: #981c1e;
+  color: white;
+}
+.news .top-news .news-box svg,
+.news .bottom-news .news-box svg {
+  height: 50px;
+  stroke: #981c1e;
+}
+.news .top-news .news-item:hover svg,
+.news .bottom-news .news-item:hover svg {
+  animation: rotate 0.5s linear 1 forwards;
+  stroke: white;
+}
+.news .top-news #yellow-box-one {
+  background-color: #dc8a03;
+  color: white;
+}
+.news .top-news #yellow-box-one svg {
+  stroke: white;
+}
+.news .top-news #yellow-box-one:hover {
+  background-color: white;
+  color: black;
+}
+.news .top-news #yellow-box-one:hover svg {
+  animation: rotate 0.5s linear 1 forwards;
+  stroke: #981c1e;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+.news .bottom-news {
+  display: flex;
+  gap: 16px;
+  margin-top: 50px;
+}
+.news .bottom-news svg {
+  height: 30px;
+  stroke: #981c1e;
+}
+.news .bottom-news > div {
+  flex: 1;
+  height: 450px;
+}
+
+.news .bottom-news .news-item {
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 2px 0px 22px 0px rgba(0, 0, 0, 0.55);
+}
+.news .bottom-news #news-item-three {
+  background-image: url(./images/John_O-Keeffe_Non-Executive_Director_1.png);
+}
+.news .bottom-news #news-item-four {
+  background-image: url(./images/EABL-Kes-100-M-sponsorship.jpg);
+}
+
+.news .bottom-news .news-updates-box {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  gap: 16px;
+  justify-content: space-between;
+}
+.news .bottom-news .news-update {
+  flex: 1;
+  height: 100%;
+  box-shadow: 2px 0px 22px 0px rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+.news .bottom-news .news-update p {
+  font-size: 10px;
+}
+.news .bottom-news #update-one {
+  background-color: #dc8a03;
+}
+.news .bottom-news #update-two {
+  background-color: #981c1e;
+}
+.news .bottom-news .news-update .text {
+  width: 80%;
+}
+.news .bottom-news .news-update svg {
+  stroke: white;
+  width: 25%;
+}
+
+/* brands section */
+.brands {
+  padding: 0;
+}
+.brands h2 {
+  padding-left: 80px;
+}
+.brands .white-bg {
+  background-color: white;
+  padding: 30px 80px;
+  text-align: center;
+}
+.brands .brand-images {
+  display: flex;
+  justify-content: center;
+}
+.brands .brand-images img {
+  height: 70px;
 }
